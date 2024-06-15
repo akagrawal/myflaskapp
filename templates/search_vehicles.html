@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search for Vehicles</title>
+</head>
+<body>
+    <h1>Available Vehicles</h1>
+    <ul>
+        {% for vehicle in vehicles %}
+            <li>{{ vehicle.make }} {{ vehicle.model }} - {{ vehicle.year }} - ${{ vehicle.price }} per day</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
